@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div id="nav" class='flexed container'>
+            <div id="leftNav">
+                <h1>DojoWeather</h1>
+            </div>
+            <div id="rightNav">
+                <ul>
+                    <li onclick="alert('Loading weather report...')">Burbank</li>
+                    <li onclick="alert('Loading weather report...')">Chicago</li>
+                    <li onclick="alert('Loading weather report...')">Dallas</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <main>
+        <!-- Location Bar Start -->
+        <div id="location" class='flexed'>
+            <div id="locationName">
+                <h2>San Jose</h2>
+            </div>
+            <div id="tempSelector" class='flexed'>
+                <p>show temperature in</p>
+                <select name="temperature" id="temperature">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+        <!-- Location Bar End -->
+        <!-- forecast and days start -->
+        <div id="forecast" class='flexed'>
+            <div class="days flexed">
+                <h2>Today</h2>
+                <img src="./images/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="degrees flexed">
+                    <h4 class='hot'>24°</h6>
+                    <h4 class='cold'>18°</h6>
+                </div>
+            </div>
+            <div class="days flexed">
+                <h2>Tomorrow</h2>
+                <img src="./images/some_sun.png" alt="some rain">
+                <p>some sun</p>
+                <div class="degrees flexed">
+                    <h4 class='hot'>27°</h6>
+                    <h4 class='cold'>19°</h6>
+                </div>
+            </div>
+            <div class="days flexed">
+                <h2>Friday</h2>
+                <img src="./images/some_clouds.png" alt="some rain">
+                <p>some clouds</p>
+                <div class="degrees flexed">
+                    <h4 class='hot'>21°</h6>
+                    <h4 class='cold'>16°</h6>
+                </div>
+            </div>
+            <div class="days flexed">
+                <h2>Saturday</h2>
+                <img src="./images/some_sun.png" alt="some rain">
+                <p>some sun</p>
+                <div class="degrees flexed">
+                    <h4 class='hot'>26°</h6>
+                    <h4 class='cold'>21°</h6>
+                </div>
+            </div>
+        </div>
+        <!-- forecast and days end -->
+        <div id="cookies" class='flexed'>
+            <div class="cookieLeft flexed">
+                <img src="./images/cookie.png" alt="cookie">
+                <div class="cookieWord">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize</p>
+                    <p>content and ads, to provide social media features and to</p>
+                    <p>analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+            </div>
+            <button onclick="remove(popUp)">I Accept</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

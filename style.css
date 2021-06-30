@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px red dashed; */
+}
+
+/* header */
+header{
+    background-color: #9fc5f8;
+    padding: 10px;
+}
+
+#nav{
+    color: white;
+    padding: 5px 0;
+}
+
+#rightNav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+}
+
+/* Location bar */
+#location{
+    width: 761px;
+    margin: 0 auto;
+    border-bottom: 2px black solid;
+    margin-top: 20px;
+    padding: 5px 0;
+}
+#locationName{
+    font-size: 1.2em;
+}
+#tempSelector {
+    gap: 10px;
+}
+#rightNav ul :hover{
+    cursor: pointer;
+}
+
+/* Forcast bar */
+#forecast{
+    width: 761px;
+    margin: 30px auto;
+}
+.days{
+    flex-direction: column;
+    background-color: lightgray;
+    height: 250px;
+    min-width: 170px;
+    padding: 10px;
+}
+.degrees{
+    width: 80px;
+    margin: 10px 0;
+}
+.days img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+/* Cookie bar */
+#cookies{
+    width: 761px;
+    border: 1px black solid;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 571px;
+}
+.cookieLeft{
+    gap: 30px;
+}
+#cookies button{
+    padding: 2px 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #9fc5f8;
+}
+
+
+/* Utility */
+.flexed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hot{
+    color: red;
+}
+.cold{
+    color: blue;
+}
+.container{
+    width: 761px;
+    margin: 0 auto;
+}
